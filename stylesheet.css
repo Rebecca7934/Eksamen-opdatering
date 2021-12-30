@@ -150,13 +150,20 @@ nav ul li a:hover {
     margin: 20px;
 }
 
-.work ul li{
-    margin: 30px;
-    list-style: none;
+.work ol{
+    font-size: 25px;
+    color: var(--detail-color);
+    margin-left: 20px;
+    font-weight: bold;
+    
 }
 
-.work ul li a{
-    font-size: 60px;
+.work ol li{
+    margin: 30px;
+}
+
+.work ol li a{
+    font-size: 50px;
     text-decoration: none;
     color: var(--txt-color);
     font-weight: bold;
@@ -165,7 +172,7 @@ nav ul li a:hover {
 
 }
 
-.work ul li a:hover {
+.work ol li a:hover {
     color: var(--detail-color);
 }
 
@@ -509,7 +516,11 @@ footer img{
         margin: 200px;
     }
 
-    .work ul li a{
+    .work ol{
+        font-size: 45px;
+    }
+
+    .work ol li a{
         font-size: 100px;
         
     }
