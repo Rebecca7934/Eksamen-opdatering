@@ -1,0 +1,593 @@
+:root{
+    --bgg-color: #F9E6DC; 
+    --txt-color: #464545; 
+    --link-color: rgb(0, 0, 0); 
+    --link-hover-color: rgb(119, 118, 118);
+    --detail-color: #f3868b; 
+}
+
+@font-face {
+    font-family: abril;
+    src: url(font/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: open-sans;
+    src: url(font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: open-sans;
+}
+
+body{
+    background-image: url(./img/bgg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Nav css start */
+
+.nav-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  margin-bottom: 10px;
+    
+}
+
+/* Nav css slut */
+
+/* Home css start */
+
+.intro {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.intro h1{
+    font-family: abril;
+    font-size: 80px;
+    color:var(--txt-color);
+    margin-bottom: 20px;
+
+}
+
+.intro span{
+    color: var(--detail-color);
+    font-family: abril;
+    
+}
+
+.mememe{
+    margin: 20px;
+    text-align: center;
+    text-shadow: 2px 2px var(--bgg-color);
+    
+}
+.services{
+    margin-top: 200px;
+}
+
+.services h2{
+    text-align: center;
+    margin: 50px;
+    color:var(--detail-color);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.box h3{
+    margin-bottom: 50px;
+    color: var(--txt-color);
+    font-family: abril;
+    color: var(--detail-color);
+    text-shadow: 2px 2px var(--bgg-color);
+}
+
+.design, .editing, .some{
+    border: 3px solid #464545;
+    border-radius: 20px;
+    padding: 35px;
+    margin: 5px;
+    text-align: center;
+    width: 200px;
+    height: 250px;
+
+}
+
+
+/* Home css slut */
+
+/* Portfolio css start */
+
+.work{
+    margin-top: 60px;
+}
+
+.intro p{
+    margin: 20px;
+}
+
+.work ul li{
+    margin: 30px;
+    list-style: none;
+}
+
+.work ul li a{
+    font-size: 60px;
+    text-decoration: none;
+    color: var(--txt-color);
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 5px 5px var(--bgg-color);
+
+}
+
+.work ul li a:hover {
+    color: var(--detail-color);
+}
+
+
+/* About css start */
+
+
+.img-me{
+    display: block;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.info{
+    margin: 30px;
+}
+
+
+.info a {
+    background-color: var(--bgg-color);
+    color: var(--txt-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-weight: bold;
+    border: 2px solid var(--detail-color);
+    box-shadow: 4px 4px var(--detail-color);
+}
+
+.info a:hover{
+    color: var(--detail-color);
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about h3{
+    margin-bottom: 30px;
+    color: var(--txt-color);
+    font-family: abril;
+    color: var(--detail-color); 
+    text-shadow: 2px 2px var(--bgg-color);
+}
+
+.skills, .experience {
+    border: 3px solid #464545;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+.experience span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* About css slut */
+
+/* Video css start */
+
+.video{
+    margin-top: 100px;
+}
+
+.video h2{
+    font-family: abril;
+    color: var(--detail-color);
+    margin: 20px 10px 20px 10px;
+    font-size: 40px;
+}
+
+.video p{
+    margin: 20px;
+}
+
+.video-mp4 video{
+    display: block;
+    width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+/* Video css slut */
+
+/* LivsLæring css start */
+
+.livslæring{
+    margin-top: 100px;
+}
+
+.livslæring h1{
+    font-family: abril;
+    color: var(--detail-color);
+    margin: 20px;
+    font-size: 40px;
+}
+
+.livslæring p{
+    margin: 20px;
+}
+
+.img-livslæring {
+    display: block;
+    width: 350px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.img-livslæring2 {
+    display: block;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* LivsLæring css slut */
+
+/* Dans css start */
+
+.dans{
+    margin-top: 100px;
+}
+
+.dans h1{
+    font-family: abril;
+    color: var(--detail-color);
+    margin: 20px;
+    font-size: 40px;
+}
+
+.dans p{
+    margin: 20px;
+}
+
+.img-dans {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.img-dans2 {
+    display: block;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* Dans css slut */
+
+/* Panda css start */
+
+
+.panda{
+    margin-top: 100px;
+}
+
+.panda h1{
+    font-family: abril;
+    color: var(--detail-color);
+    margin: 20px;
+    font-size: 40px;
+}
+
+.panda p, .panda-info{
+    margin: 20px;
+}
+
+.img-panda, .img-panda2 {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+/* Panda css slut */
+
+/* Procreate css start */
+
+.procreate{
+    margin-top: 100px;
+}
+
+.procreate h1{
+    font-family: abril;
+    color: var(--detail-color);
+    margin: 20px;
+    font-size: 40px;
+}
+
+.procreate p{
+    margin: 20px;
+}
+
+.ghost-info h2, .avo-info h2, .bird-info, .plant-info, .balloon-info h2{
+    color: var(--detail-color);
+    margin: 20px;
+    font-family: open-sans;
+}
+
+.img-ghost, .img-avo, .img-bird, .img-ball, .img-plant{
+    display: block;
+    width: 300px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+}
+/* Procreate css slut */
+
+
+/* Footer */
+
+footer{
+    text-align: center;
+    padding: 21px;
+    height: 140px;
+    margin-top: 40px;
+}
+
+footer p{
+    margin: 3px;
+    color: var(--txt-color);
+}
+
+footer a{
+    color: var(--txt-color);
+}
+
+footer img{
+    width: 30px;
+    height: auto;
+    margin: 10px 5px 10px 5px;
+}
+
+@media screen and (min-width: 768px){
+
+    nav{
+        flex-direction: row;
+    }
+
+    .intro h1{
+        font-size: 100px;
+        margin-top: 160px;
+    }
+
+    .services{
+        margin-top: 280px;
+    }
+
+    .mememe{
+        margin: 30px 180px 30px 180px;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    .design, .editing, .some{
+        margin: 20px;
+    }
+
+    .about{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+}
+
+/* Desktop css*/
+
+@media screen and (min-width: 992px) {
+
+    .design, .editing, .some{
+        margin: 30px;
+    }
+
+    .info {
+        margin-left: 200px;
+        margin-top: 150px;
+    }
+    .info p{
+        width: 650px;
+    }
+
+    .img-me{
+        float: right;
+        margin: 100px 200px 100px 30px;
+    }
+
+    .clr{
+        clear: both;
+    }
+
+    .work{
+        margin: 200px;
+    }
+
+    .work ul li a{
+        font-size: 100px;
+        
+    }
+
+    .intro p{
+        margin: 30px 180px 30px 180px;
+        
+    }
+
+
+    .skills, .experience{
+        margin: 30px;
+    }
+
+    .video-mp4 video{
+        width: 700px;
+        height: auto;
+        
+    }
+
+    .video{
+        margin: 70px;
+    }
+
+    .img-livslæring{
+        width: 650px;
+        height: auto;
+    }
+
+    .img-livslæring2{
+        float: right;
+        margin: 180px 200px 100px 30px;
+    }
+
+    .livslæring{
+        margin-left: 200px;
+        margin-top: 130px;
+    }
+
+    .livslæring p {
+        width: 550px;
+    }
+
+    .img-dans{
+        width: 650px;
+        height: auto;
+    }
+
+    .img-dans2{
+        float: right;
+        margin: 100px 200px 100px 30px;
+    }
+
+    .dans{
+        margin-left: 200px;
+        margin-top: 160px;
+    }
+
+    .dans p {
+        width: 550px;
+    }
+
+    .panda, .panda-info{
+        margin: 160px 200px 20px 200px;
+    }
+
+    .img-panda, .img-panda2{
+        width: 650px;
+        height: auto;
+    }
+
+    .procreate, .ghost-info, .avo-info, .bird-info, .plant-info, .balloon-info{
+        margin: 160px 200px 20px 200px;
+    }
+
+    .img-ghost, .img-avo, .img-bird, .img-plant, .img-ball{
+        width: 650px;
+        height: auto;
+    }
+
+}
